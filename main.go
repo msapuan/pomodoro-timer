@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
+	"pomodoro-timer/notify"
 	"pomodoro-timer/quotes"
 	"pomodoro-timer/timer"
 )
@@ -16,5 +17,9 @@ func main() {
 	fmt.Println(quotes.GetQuote())
 
 	timer.StartTimer(*work, "Waktu Fokus")
+	notify.Show("Pomodoro", "Sesi fokus selesai. Saatnya istirahat!")
+
 	timer.StartTimer(*breakTime, "Waktu Istirahat")
+	notify.Show("Pomodoro", "Istirahat selesai. Ayo mulai lagi!")
+
 }
