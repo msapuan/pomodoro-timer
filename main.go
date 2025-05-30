@@ -26,16 +26,30 @@ func getInputInt(prompt string) int {
 }
 
 func main() {
-	// Input langsung dari user
-	work := getInputInt("⏱️  Waktu fokus (menit): ")
-	breakTime := getInputInt("🛌 Waktu istirahat (menit): ")
+	reader := bufio.NewReader(os.Stdin)
 
-	fmt.Println("\n🌟 Motivasi:")
-	fmt.Println(quotes.GetQuote())
+	for {
+		// Input langsung dari user
+		work := getInputInt("⏱️  Waktu fokus (menit): ")
+		breakTime := getInputInt("🛌 Waktu istirahat (menit): ")
 
-	timer.StartTimer(work, "Waktu Fokus")
-	notify.Show("Pomodoro Timer", "Sesi fokus selesai. Saatnya istirahat!")
+		fmt.Println("\n🌟 Motivasi:")
+		fmt.Println(quotes.GetQuote())
 
-	timer.StartTimer(breakTime, "Waktu Istirahat")
-	notify.Show("Pomodoro Timer", "Istirahat selesai. Ayo mulai lagi!")
+		timer.StartTimer(work, "Waktu Fokus")
+		notify.Show("Pomodoro Timer", "Sesi fokus selesai. Saatnya istirahat!")
+
+		timer.StartTimer(breakTime, "Waktu Istirahat")
+		notify.Show("Pomodoro Timer", "Istirahat selesai. Ayo mulai lagi!")
+
+		// Menanyakan apakah ingin mengulang
+		fmt.Print("\n🔁 Ingin memulai siklus lagi? (y/n): ")
+		answer, _ := reader.ReadString('\n')
+		answer = strings.ToLower(strings.TrimSpace(answer))
+
+		if answer != "y" {
+			fmt.Println("👋 Sampai jumpa!")
+			break
+		}
+	}
 }
