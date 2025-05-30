@@ -26,30 +26,26 @@ func getInputInt(prompt string) int {
 }
 
 func main() {
-	reader := bufio.NewReader(os.Stdin)
+	// Input langsung dari user satu kali
+	work := getInputInt("⏱️  Waktu fokus (menit): ")
+	breakTime := getInputInt("🛌 Waktu istirahat (menit): ")
+	cycles := getInputInt("🔁 Jumlah siklus Pomodoro: ")
 
-	for {
-		// Input langsung dari user
-		work := getInputInt("⏱️  Waktu fokus (menit): ")
-		breakTime := getInputInt("🛌 Waktu istirahat (menit): ")
+	fmt.Println("\n🌟 Motivasi:")
+	fmt.Println(quotes.GetQuote())
 
-		fmt.Println("\n🌟 Motivasi:")
-		fmt.Println(quotes.GetQuote())
+	for i := 1; i <= cycles; i++ {
+		fmt.Printf("\n🔄 Siklus %d dari %d\n", i, cycles)
 
 		timer.StartTimer(work, "Waktu Fokus")
 		notify.Show("Pomodoro Timer", "Sesi fokus selesai. Saatnya istirahat!")
 
-		timer.StartTimer(breakTime, "Waktu Istirahat")
-		notify.Show("Pomodoro Timer", "Istirahat selesai. Ayo mulai lagi!")
-
-		// Menanyakan apakah ingin mengulang
-		fmt.Print("\n🔁 Ingin memulai siklus lagi? (y/n): ")
-		answer, _ := reader.ReadString('\n')
-		answer = strings.ToLower(strings.TrimSpace(answer))
-
-		if answer != "y" {
-			fmt.Println("👋 Sampai jumpa!")
-			break
+		// Hanya lakukan istirahat jika belum di siklus terakhir
+		if i < cycles {
+			timer.StartTimer(breakTime, "Waktu Istirahat")
+			notify.Show("Pomodoro Timer", "Istirahat selesai. Ayo mulai lagi!")
 		}
 	}
+
+	fmt.Println("✅ Semua siklus selesai! Kerja bagus!")
 }
