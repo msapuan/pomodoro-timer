@@ -10,6 +10,8 @@ import (
 	"pomodoro-timer/notify"
 	"pomodoro-timer/quotes"
 	"pomodoro-timer/timer"
+
+	"pomodoro-timer/sound"
 )
 
 func getInputInt(prompt string) int {
@@ -38,11 +40,15 @@ func main() {
 		fmt.Printf("\n🔄 Siklus %d dari %d\n", i, cycles)
 
 		timer.StartTimer(work, "Waktu Fokus")
+		sound.PlaySound("assets/sounds/focus.mp3")
+		// Tampilkan notifikasi setelah sesi fokus selesai
 		notify.Show("Pomodoro Timer", "Sesi fokus selesai. Saatnya istirahat!")
 
 		// Hanya lakukan istirahat jika belum di siklus terakhir
 		if i < cycles {
 			timer.StartTimer(breakTime, "Waktu Istirahat")
+			sound.PlaySound("assets/sounds/break.mp3")
+			// Tampilkan notifikasi setelah sesi istirahat selesai
 			notify.Show("Pomodoro Timer", "Istirahat selesai. Ayo mulai lagi!")
 		}
 	}
