@@ -1,0 +1,10 @@
+Package: pomodoro-timer
+Version: 1.0.1
+Section: utils
+Priority: optional
+Architecture: amd64
+Maintainer: msapuandev <muhammadsapuan16@gmail.com>
+Description: A simple CLI Pomodoro timer written in Go
+
+
+
