@@ -3,6 +3,7 @@ package sound
 import (
 	"log"
 	"os"
+	"path/filepath"
 	"time"
 
 	"github.com/faiface/beep"
@@ -10,8 +11,13 @@ import (
 	"github.com/faiface/beep/speaker"
 )
 
-func PlaySound(filePath string) {
-	f, err := os.Open(filePath)
+// Path absolut ke direktori tempat file suara disimpan oleh .deb
+const systemSoundPath = "/usr/share/pomodoro-timer/assets/sounds"
+
+func PlaySound(filename string) {
+	fullPath := filepath.Join(systemSoundPath, filename)
+
+	f, err := os.Open(fullPath)
 	if err != nil {
 		log.Println("Gagal membuka file suara:", err)
 		return
