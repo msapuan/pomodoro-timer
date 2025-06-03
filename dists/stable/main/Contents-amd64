@@ -1,0 +1,3 @@
+usr/bin/pomodoro-timer					    utils/pomodoro-timer
+usr/share/pomodoro-timer/sounds/break.mp3		    utils/pomodoro-timer
+usr/share/pomodoro-timer/sounds/focus.mp3		    utils/pomodoro-timer

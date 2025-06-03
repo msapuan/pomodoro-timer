@@ -1,0 +1,14 @@
+Package: pomodoro-timer
+Architecture: amd64
+Version: 1.0.1
+Priority: optional
+Section: utils
+Maintainer: msapuandev <muhammadsapuan16@gmail.com>
+Filename: dists/stable/main/binary-amd64/pomodoro-timer_1.0.1_amd64.deb
+Size: 4723864
+MD5sum: 35d8206beccfa8d017117b01b2b25315
+SHA1: 30c766db261dbdaa877f9fb900a73f7f88891d72
+SHA256: e45dd1ac2eb0cd49969d469e5a6f76a6d5a25d9d591a530af22d7a84af4a481d
+SHA512: aba4e357a197559ab49f24951a1910875b53f0c5f76883c05996b92da791c3066a231f9a410e3109fa7ac99eea78cb6faaadbd25ab7477ccd473f59bccb2de77
+Description: A simple CLI Pomodoro timer written in Go
+
