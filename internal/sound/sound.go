@@ -12,7 +12,7 @@ import (
 )
 
 // Path absolut ke direktori tempat file suara disimpan oleh .deb
-const systemSoundPath = "/usr/share/pomodoro-timer/assets/sounds"
+const systemSoundPath = "/usr/share/pomodoro-timer/sounds"
 
 func PlaySound(filename string) {
 	fullPath := filepath.Join(systemSoundPath, filename)
