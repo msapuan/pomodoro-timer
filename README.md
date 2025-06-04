@@ -29,7 +29,7 @@ You can install `pomodoro-timer` in two ways:
 2. Install it using `dpkg`:
 
    ```bash
-   sudo dpkg -i pomodoro-timer_<version>_amd64.deb
+   sudo dpkg -i pomodoro-timer_1.0.1_amd64.deb
    ```
 
 3. Done! Run it with:
@@ -54,7 +54,7 @@ This method allows you to receive updates via `sudo apt upgrade`.
 2. Add the custom APT repository:
 
    ```bash
-   echo "deb [trusted=yes] https://msapuan.github.io/pomodoro-timer stable main" | sudo tee /etc/apt/sources.list.d/pomodoro-timer.list
+   echo "deb [trusted=yes] https://msapuan.github.io/pomodoro-timer stable main" | sudo tee /etc/apt/sources.list.d/pomodoro.list
    ```
 
 3. Update your package list:
@@ -88,23 +88,6 @@ pomodoro-timer
 ```
 
 You'll hear notification sounds at the beginning and end of each session, and get a motivational quote to keep you going 💪
-
----
-
-## 📦 How It Works (for developers)
-
-This app is written in Go and packaged as a `.deb` file for easy distribution via a custom APT repo hosted on GitHub Pages.
-
-### Project Structure:
-
-```
-pomodoro-timer/
-├── cmd/...
-├── internal/...
-├── assets/sounds/
-├── debian/control
-├── build/
-```
 
 ---
 
