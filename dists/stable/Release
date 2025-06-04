@@ -1,24 +1,41 @@
-Architectures: amd64
-Codename: stable
-Components: main
-Date: Tue, 03 Jun 2025 16:47:15 +0000
-Description: APT repo for pomodoro-timer
-Label: Pomodoro Timer
-Origin: Pomodoro Timer
-Suite: stable
+Date: Wed, 04 Jun 2025 09:14:16 +0000
 MD5Sum:
- 34e354afdf52fda7b5ad68ec72db8ddd              193 Release
- 17f363e33e6b5cdcef6ba8e112bfe94f              322 main/binary-amd64/Packages.gz
- 25e178a77f5399409fbc5fbf1b7b35c2              329 main/binary-i386/Packages.gz
+ 1cac239425e30a85d6962b21d1ad2f84               38 Release
+ 88d9ed179b28436a5663cefdc837738a              188 main/Contents-amd64
+ 8a45d13860bccf69b858b1cd7dce51ed              112 main/Contents-amd64.gz
+ 88d9ed179b28436a5663cefdc837738a              188 main/Contents-i386
+ 8a45d13860bccf69b858b1cd7dce51ed              112 main/Contents-i386.gz
+ d836f1a88a972a2e909ee5337525cd1a              554 main/binary-amd64/Packages
+ bfab887da6fed0eed4a4ee092b49337f              414 main/binary-amd64/Packages.gz
+ b420b0be3a862e6954d7574b5efc7574              553 main/binary-i386/Packages
+ 6c0767eb6ab6fe533afa75de3398d896              414 main/binary-i386/Packages.gz
 SHA1:
- a57d9df1e20fec569342af0c26d69dc78e298c12              193 Release
- ff7e456c23a7dccf6ee520e11f784e76c36a3b80              322 main/binary-amd64/Packages.gz
- 373a1c2c902cc716957af967e36fe38292a7057d              329 main/binary-i386/Packages.gz
+ 45f670ac4b03bf3cc5ac5103d2f4605b66b50c8d               38 Release
+ 26e23ccc8e115887e92ba2ebf24f639dd73e9cbc              188 main/Contents-amd64
+ df212996b65be01a11e014bcaadf874c1b756634              112 main/Contents-amd64.gz
+ 26e23ccc8e115887e92ba2ebf24f639dd73e9cbc              188 main/Contents-i386
+ df212996b65be01a11e014bcaadf874c1b756634              112 main/Contents-i386.gz
+ 71e9c3f35bcf952b81c7929b5f2d1c6831b3d6d6              554 main/binary-amd64/Packages
+ ca029ed46f75a07cdf8f83072e1d003c630a22dd              414 main/binary-amd64/Packages.gz
+ dbb997d77347901497fa021befeffd65b26fc1b9              553 main/binary-i386/Packages
+ f2d6a6fc26f7d2a2f457050b411700e03db78920              414 main/binary-i386/Packages.gz
 SHA256:
- a452ab64156665b919b291f5c76a6ac394a05b3bef470088835de1dc50ef24f0              193 Release
- 2cd0e64d6ea4c2ba886745b89e1efbd3f7cc683a293c933ffc9070e087a12795              322 main/binary-amd64/Packages.gz
- d50fcee4f730872c69f14fe24718007f77e1c0d174dc8c9ec2baf7738af00ea5              329 main/binary-i386/Packages.gz
+ d07a985f52ffdb207ccb0e1a8dd11c903685df96faba7ccf0eea9eab2351d9cd               38 Release
+ 74d9c785a56a1e38496c7ee1c5a7f2e8622120b50b2652d05f353de4a132ffed              188 main/Contents-amd64
+ 1c49949d9a45b8a5058f07d08c3216119a1ff9a6896da4d2cf039dd5009cb515              112 main/Contents-amd64.gz
+ 74d9c785a56a1e38496c7ee1c5a7f2e8622120b50b2652d05f353de4a132ffed              188 main/Contents-i386
+ 1c49949d9a45b8a5058f07d08c3216119a1ff9a6896da4d2cf039dd5009cb515              112 main/Contents-i386.gz
+ aa714bc9a95dd3f8de034b0ef27996ecc1609789ab0a5f1021f635465b20f128              554 main/binary-amd64/Packages
+ 0ca280482b45a4bf2a2ab19778d11037c41b0a415ec5084448f0ce8d29c1f3c7              414 main/binary-amd64/Packages.gz
+ 1ff1865131a7d842728af88515acc0126b8581a2a814af813513e4a59bc44021              553 main/binary-i386/Packages
+ c3c1fdacf2a97d5d5255a252cd0dd903f84bef001faa76f8b5364d8fb39bfa1d              414 main/binary-i386/Packages.gz
 SHA512:
- 0cb235fbd22d9c530b54f6bcbc5f9973b1cbf7a307c2ef5c98d53b8f12292059eba87d2cc2f7e06e2296271f180e88eda9520516b09e35b4f622f0a4dd893a89              193 Release
- 104910152b0d020fe7f765b8ca6a6dc268c0bfad2d82128ccfeb082fd1a784038af209bd4c2a22f848e34451bd09773adb2c0708db79fc97abd95e66a88005e7              322 main/binary-amd64/Packages.gz
- 27eb2d9e2ca6f66f7ebb1cbc4a409248eab24bce18a8cbc7adafc3d18e08b64cca9274ff8958dd11a730168b64fa8dce68b6c507aaecb11a97ad94ba7742f932              329 main/binary-i386/Packages.gz
+ f121ee18eae7379714d40cd9945395dd7852337dedc68c28e44548443b99f8331388a93c11942f28fa78b3ff7bb2cd266e92923e0eb5ba4b9ab1e0e288566437               38 Release
+ bdb7fa43994f9e8fa217fb6d8398e9719553b40c59cd28e47cb0668c37c73df469bebed3bec6430c1e50ecf9da01f8dee919b90a865529bc623ad04d58e8aa8f              188 main/Contents-amd64
+ f35b98edd8744e9248550c9f89fb124ae58fd5f0ea4357b16dcb9111a447648274ea4740a30ddaa118784cfb07fcfe508e4506bed1aa4e6a80c93804777677ba              112 main/Contents-amd64.gz
+ bdb7fa43994f9e8fa217fb6d8398e9719553b40c59cd28e47cb0668c37c73df469bebed3bec6430c1e50ecf9da01f8dee919b90a865529bc623ad04d58e8aa8f              188 main/Contents-i386
+ f35b98edd8744e9248550c9f89fb124ae58fd5f0ea4357b16dcb9111a447648274ea4740a30ddaa118784cfb07fcfe508e4506bed1aa4e6a80c93804777677ba              112 main/Contents-i386.gz
+ 7e0ac5765203a705ef7dddbecd9e3e51f315c1a039f799dbbee97b289dfdff1f37a9efbe2ddb79638c315abef7386238def30e40755ede90ab292a0f66a536c2              554 main/binary-amd64/Packages
+ 7f8857b4e77842a5869cd79d3256428740b93a8e38283ec7156747639240a88760340fd47641e867f0015417f3f45c28a227a704ca67ee0bc67a75ec9142240e              414 main/binary-amd64/Packages.gz
+ c5502e2bd37c2a685be182c8a17fc9c0e5d413b62f00dda5fe7254c10323aa9763975ea41c5c5f679dc56d6a6e8641cfb0d98f9aac49d7e24f2db0704376b604              553 main/binary-i386/Packages
+ 71539f44a9db0a89ef83efa6480ecbda322d143f5c897adc9d5b7eb9e9fecc714a37a33954e2a22dd5aae9f0ee2fc239b15eb98075c477b21f00ac7ec62e587e              414 main/binary-i386/Packages.gz
